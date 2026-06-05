@@ -476,7 +476,11 @@
       <span class="eyebrow">Get in touch</span>
       <h2 class="sec-head" style="margin-bottom:1rem">Let's light the way for your business.</h2>
       <p style="color:var(--ink-soft); font-size:1.06rem; max-width:42ch;">Tell us a little about your business and what you're looking for, and we will be in touch.</p>
-      <form class="enquiry" action="mailto:gregor@streetfinance.co.za" method="post" enctype="text/plain">
+      <form class="enquiry" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="67f8a4a9-5adf-4ce7-9ee2-45008e17276a" />
+        <input type="hidden" name="subject" value="streetfinance.co.za — new enquiry" />
+        <input type="hidden" name="from_name" value="streetfinance.co.za" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
         <label>Name<input type="text" name="Name" required placeholder="Your name" /></label>
         <label>Email<input type="email" name="Email" required placeholder="you@company.co.za" /></label>
         <label>What are you looking for?<textarea name="Services" rows="3" required placeholder="e.g. monthly accounting, tax, payroll…"></textarea></label>
